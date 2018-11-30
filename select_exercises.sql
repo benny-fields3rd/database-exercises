@@ -1,13 +1,13 @@
 USE codeup_test_db;
 
-SELECT 'All Pink Floyd:';
-SELECT * from albums WHERE artist = 'Pink Floyd';
+SELECT 'All Pink Floyd:' AS 'All Pink Floyd';
+SELECT name from albums WHERE artist = 'Pink Floyd';
 
 SELECT 'Year Sgt. Pepper\'s Lonely Heart Club Band was released:';
-SELECT release_date from albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT release_date from albums WHERE name = 'Sgt. Pepper\'s Lonely Hearts Club Band';
 
 SELECT 'Genre for Nevermind:';
-SELECT genre from albums where name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT genre from albums where name = 'Nevermind';
 
 SELECT 'All albums released in the 1990\'s:';
 SELECT * from albums where release_date BETWEEN 1990 AND 1999;

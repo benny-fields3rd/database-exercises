@@ -1,6 +1,10 @@
+SELECT 'Using codeup_test_db' AS 'Use Statement';
 USE codeup_test_db;
-TRUNCATE albums;
 
+SELECT 'Truncating albums table' AS 'Truncate Statement';
+TRUNCATE albums; -- Truncate will never be run in production!! Only in seeders!
+
+SELECT 'Inserting records into albums table' AS 'Insert Statement';
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', 1982, 47.3,'Pop'),
        ('Eagles', 'Their Greatest Hits (1971-1975)', 1976, 41.2,'Country Rock'),
