@@ -18,3 +18,4 @@ SELECT * from albums where sales < 20;
 SELECT 'All albums with Rock genre:';
 SELECT * from albums where genre = 'Rock';
 
+SELECT * from albums;
